@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+    font-weight: 300;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.calc-container {
+    width: 300px;
+    height: 520px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 27px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.01);
+}
+
+.display-container {
+    padding: 5px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 15px;
+}
+
+.button-container {
+    padding: 5px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-between;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    color: #808080;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    border: solid 1px #f1f1f1;
+}
+
+.button:active {
+    border: none;
+}
+
+.operator {
+    color: #6cd9c5;
+}
+
+.equals {
+    color: #fa4570;
+}
+
+.spacer {
+    width: 50px;
+}
+
+.main-display {
+    font-size: 50px;
+    color: #121212;
+    width: 100%;
+    text-align: end;
+    overflow: hidden;
+}
+
+.second-display {
+    color: #d1d1d1;
+    margin-right: 4px;
+    width: 100%;
+    text-align: end;
+    overflow: hidden;
+}
